@@ -1,12 +1,13 @@
 import React from 'react'
-
+import IngridentsList from './IngridentsList';
 const Recipe = (props) => {
     const {
         id,
         name,
         servings,
         cookTime,
-        instructions
+        instructions,
+        ingridents,
     } = props;
   return (
     <div>
@@ -28,6 +29,10 @@ const Recipe = (props) => {
         <div>
             <div>Instructions:</div>
             {instructions}
+        </div>
+        <div>
+            <div>Ingridents:</div>
+            {<IngridentsList ingridents={ingridents}/>}
         </div>
     </div>
   )
