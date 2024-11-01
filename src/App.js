@@ -1,6 +1,5 @@
 import React, {useState}from 'react'
 
-
 function App() {
   const [count,setCount] = useState(0);
   const incremntFun = () =>{
@@ -11,7 +10,7 @@ function App() {
   }
   return (
     <>
-    <button onClick={decrementFun}>-</button>
+    <button onClick={decrementFun} style={{"background": "red"}}>-</button>
     <span>{count}</span>
     <button onClick={incremntFun}>+</button>
     </>
